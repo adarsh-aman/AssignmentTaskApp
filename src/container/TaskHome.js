@@ -7,7 +7,6 @@ import Footer from '../components/Footer';
 import NewTaskItem from './NewTaskItem';
 import InProgressTask from './InProgressTask';
 import CompletedTask from './CompletedTask';
-// import initialState from './constants';
 import './styles.css';
 
 class TaskHome extends React.Component {
