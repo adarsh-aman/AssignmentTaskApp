@@ -6,13 +6,13 @@ class CompletedTask extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            showPopup: false
+            showPopup: false,
+            taskDesctiption: ""
         }
     }
 
     openPopup = () => {
         this.setState({ showPopup: true })
-        console.log("clickecd")
     }
     handleClose = () => {
         this.setState({ showPopup: false })
@@ -24,7 +24,7 @@ class CompletedTask extends React.Component {
                 <div className="row">
                     <div className="col-sm-12">
                         <p><strong>View Completed Task</strong></p>
-                        {this.props.completedTask}
+                        {this.state.taskDesctiption}
                     </div>
                 </div>
             </Modal>
@@ -32,6 +32,7 @@ class CompletedTask extends React.Component {
     }
 
     render() {
+        this.state.taskDesctiption = this.props.completedTask
         return (
             <div>
                 <div>
@@ -42,8 +43,8 @@ class CompletedTask extends React.Component {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-sm-12" onClick={this.openPopup}>
-                            {this.props.completedTask}
+                        <div className="col-sm-12 card-text" onClick={this.openPopup}>
+                            {this.state.taskDesctiption}
                         </div>
                     </div>
                 </div>

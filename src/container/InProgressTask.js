@@ -49,7 +49,7 @@ class InProgressTask extends React.Component {
                         </div>
                 </div>
                 <div className="row">
-                    <div className="col-sm-12" onClick={this.openPopup}>
+                    <div className="col-sm-12 card-text" onClick={this.openPopup}>
                         {this.state.initiatedtaskDesc}
                     </div>
                 </div>

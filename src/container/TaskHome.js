@@ -57,7 +57,7 @@ class TaskHome extends React.Component {
 
     renderModal = () => {
         return (
-            <Modal className="modal-div" open={this.state.showPopForAddNewTask} onClose={this.handleClose} center>
+            <Modal open={this.state.showPopForAddNewTask} onClose={this.handleClose} center>
                 <div className="row">
                     <div className="col-sm-12">
                         <h2>Add Task to Update</h2>
