@@ -53,7 +53,7 @@ class TaskHome extends React.Component {
             <Modal className="modal-div" open={this.state.showPopForAddNewTask} onClose={this.handleClose} center>
                 <div className="row">
                     <div className="col-sm-12">
-                        <h2>Simple centered modal</h2>
+                        <h2>Add Task to Update</h2>
                         <form>
                             <div className="form-group">
                                 <input type="text" className="form-control" id="inputTask" placeholder="Enter task to add" ref={(input) => this.input = input}></input>

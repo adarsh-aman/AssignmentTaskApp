@@ -19,7 +19,7 @@ class InProgressTask extends React.Component {
         this.props.callBackComplete(this.state.initiatedtaskDesc)
     }
 
-    openPopupInprogressView = () => {
+    openPopup = () => {
         this.setState({ openViewPopupInProgressTask: true })
     }
     handleClose = () => {
@@ -31,8 +31,8 @@ class InProgressTask extends React.Component {
             <Modal className="modal-div" open={this.state.openViewPopupInProgressTask} onClose={this.handleClose} center>
                 <div className="row">
                     <div className="col-sm-12">
-                        <p><strong>View Created Task</strong></p>
-                        {this.state.desc}
+                        <p><strong>View Inprogress Task</strong></p>
+                        {this.state.initiatedtaskDesc}
                     </div>
                 </div>
             </Modal>
@@ -42,14 +42,14 @@ class InProgressTask extends React.Component {
     render() {
         return (
             <div>
-                {this.openPopupInprogressView}
+                {this.handleOpenModal()}
                 <div className="row">
                     <div className="col-sm-12 title">
                         In Progress
                         </div>
                 </div>
                 <div className="row">
-                    <div className="col-sm-12">
+                    <div className="col-sm-12" onClick={this.openPopup}>
                         {this.state.initiatedtaskDesc}
                     </div>
                 </div>
