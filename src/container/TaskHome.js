@@ -22,12 +22,19 @@ class TaskHome extends React.Component {
     }
 
     initiateTask = (taskTOInitiate) => {
-        this.setState({ startedTask: taskTOInitiate },
+        this.setState({
+            startedTask: taskTOInitiate,
+            taskDesc: ""
+        },
+
             console.log("newStateSet", this.state.startedTask))
     }
 
     completedtask = (completedTask) => {
-        this.setState({ completedTask },
+        this.setState({
+            completedTask,
+            startedTask: ""
+        },
             console.log("newStateSet", this.state.completedTask))
     }
 
