@@ -1,0 +1,25 @@
+.modal-div {}
+
+.task-container {
+    border: 2px solid #000000;
+    min-height: 400px;
+    text-align: center
+}
+
+.title {
+    padding: 10px;
+    border: 2px solid #000000;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.app-title,
+.app-title-btn {
+    text-align: center
+}
+
+.app-title-btn {
+    margin-bottom: 10px;
+}
